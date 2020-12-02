@@ -7,7 +7,7 @@ class Student(models.Model):
     email = models.EmailField(max_length=60)
     document = models.CharField(max_length=50)
     phone = models.CharField(max_length=15)
-    registrationDate = models.DateField()
+    registrationDate = models.DateField(auto_now_add=True)
     
     def __str__(self):
         return self.name
