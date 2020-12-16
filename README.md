@@ -14,14 +14,14 @@ git merge
 git pull
 
 ### To create a new branch, based off of another one
-git checkout -b <new branch name> <branch to base off of>
+git checkout -b {new branch name} {branch to base off of}
 
 ### To add any changes made
 #### the -A will stage all, or your can specify one file name at a time
 git add -A
 
 ### To remove a staged file:
-git restore --staged <file>
+git restore --staged {file}
 
 ### To commit changes
 #### saving to local git repo
@@ -29,7 +29,7 @@ git commit -m "Your commit message goes here"
 
 ### To save changes to remote repo
 #### origin
-git push origin <branch name>
+git push origin {branch name}
 
 ### To view a log of all commits on a branch
 git log --graph --pretty=one-line --abbrev-commit
@@ -39,7 +39,7 @@ git log --graph --pretty=one-line --abbrev-commit
 git reset --soft HEAD~N
 
 ### To overwrite your local branch with the remote version of it
-git reset --hard origin/<branch name>
+git reset --hard origin/{branch name}
 
 ### To sqaure commits into one or more
 #### for previous N commits
@@ -51,15 +51,15 @@ then update your commit message
 ### To rebase off of another branch
 #### useful when trying to merge into master
 #### first rebase your branch off of master, then submit your PR
-git pull --rebase origin <remote branch name>
+git pull --rebase origin {remote branch name}
 
 ### To delete a local branch
 #### capital D may be required
-git branch -d <local branch name>
+git branch -d {local branch name}
 
 ### To delete a remote branch
-git push origin --delete <remote branch name>
+git push origin --delete {remote branch name}
 
 ### Force push
 #### will be required if you squashed after pushing
-git push origin <branch name> --force
+git push origin {branch name} --force
